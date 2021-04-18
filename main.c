@@ -103,7 +103,7 @@ int main(void) {
 
     while(1) {
         update();
-        sleepMS(100);
+        sleepMS(40);
     }
 
     return EXIT_SUCCESS;
