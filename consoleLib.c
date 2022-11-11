@@ -144,7 +144,8 @@
 
         int start = 0;
         int startColumn = columnTmp;
-        for(int i = 0;i < (int)strlen(drawBuf);i++) {
+        int len = (int)strlen(drawBuf);
+        for(int i = 0;i < len;i++) {
             columnTmp++;
             if(drawBuf[i] == '\n') {
                 //Draw line
@@ -156,7 +157,7 @@
                 start = i + 1;
             }
         }
-        if(strlen(drawBuf) > (size_t)start) {
+        if(len > (size_t)start) {
             //Draw str without '\n'
             mvaddstr(rowTmp, startColumn, drawBuf + start);
         }
@@ -374,7 +375,8 @@
         vsprintf(tmpBuf, format, args);
 
         //Copy to textBuf
-        for(int i = 0;i < (signed)strlen(tmpBuf);i++) {
+        signed len = (signed)strlen(tmpBuf);
+        for(int i = 0;i < len;i++) {
             if(tmpBuf[i] == '\n') {
                 rowTmp++;
                 columnTmp = 0;
