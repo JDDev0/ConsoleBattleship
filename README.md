@@ -7,4 +7,4 @@ A battleship game for Console (Linux, Windows)
 1. cd Release
 2. make all
 3. cd ..
-4. Release/SchiffeVersenken
+4. Release/Battleship
