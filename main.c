@@ -8,7 +8,7 @@
 #include "gameField.h"
 #include "helpMenu.h"
 
-#define VERSION "v1.0.3"
+#define VERSION "1.0.3"
 
 void resetGame(void);
 void init(void);
