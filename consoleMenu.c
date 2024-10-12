@@ -177,7 +177,6 @@ void drawContent(struct tableOfContents *content, int page) {
     }
     for(int i = 0;i < maxRow;i++) {
         int dotCount = 0;
-        int i = 0;
         int numStart = 0;
         while(pos[i] != ' ' || !numStart) {
             if(pos[i] != ' ' && !numStart) {

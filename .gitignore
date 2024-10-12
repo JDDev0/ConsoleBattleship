@@ -40,10 +40,6 @@ local.properties
 .sts4-cache/
 
 ## Builds
-Debug/
-Release/*.d
-Release/*.o
-Release/Battleship
+cmake-build-*
 
-# End of https://www.toptal.com/developers/gitignore/api/eclipse
-/Release/
+.idea
