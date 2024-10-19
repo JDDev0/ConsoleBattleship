@@ -20,7 +20,7 @@
         columnTmp = 0;
         rowTmp = 0;
         refresh();
-        clear();
+        erase();
 
         //Reset color
         lastColorPairID = 1;
