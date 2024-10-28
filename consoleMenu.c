@@ -179,17 +179,17 @@ void drawContent(struct tableOfContents *content, int page) {
         int dotCount = 0;
         int numStart = 0;
 
-        i = 0;
-        while(pos[i] != ' ' || !numStart) {
-            if(pos[i] != ' ' && !numStart) {
+        int j = 0;
+        while(pos[j] != ' ' || !numStart) {
+            if(pos[j] != ' ' && !numStart) {
                 numStart = 1;
             }
 
-            if(pos[i] == '.') {
+            if(pos[j] == '.') {
                 dotCount++;
             }
 
-            i++;
+            j++;
         }
 
         setColor(colors[dotCount], CL_COLOR_NO_COLOR);
