@@ -43,7 +43,7 @@
 
     void drawf(const char *restrict format, ...);
 
-    enum conosleLibColor {
+    enum consoleLibColor {
         CL_COLOR_BLACK, CL_COLOR_BLUE, CL_COLOR_GREEN, CL_COLOR_CYAN, CL_COLOR_RED,
         CL_COLOR_PINK, CL_COLOR_YELLOW, CL_COLOR_WHITE, CL_COLOR_LIGHT_BLACK,
         CL_COLOR_LIGHT_BLUE, CL_COLOR_LIGHT_GREEN, CL_COLOR_LIGHT_CYAN,

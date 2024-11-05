@@ -160,7 +160,7 @@ void addSubSubSection(struct tableOfContents *content, char *name, int page) {
     content->rowNow++;
 }
 
-static const enum conosleLibColor colors[] = {
+static const enum consoleLibColor colors[] = {
     CL_COLOR_BLUE, CL_COLOR_GREEN, CL_COLOR_CYAN
 };
 void drawContent(struct tableOfContents *content, int page) {

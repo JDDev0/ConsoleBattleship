@@ -53,7 +53,7 @@ static struct field player, computer;
 static const char *difficultyName[] = {
     "EASY", "NORMAL"
 };
-static const enum conosleLibColor difficultyColor[] = {
+static const enum consoleLibColor difficultyColor[] = {
     CL_COLOR_GREEN, CL_COLOR_YELLOW
 };
 static const int difficultyCount = 2;
@@ -65,7 +65,7 @@ static enum {
 static const char *modeName[] = {
     "CLASSIC", "BOMBER", "MINES", "CUSTOM"
 };
-static const enum conosleLibColor modeColor[] = {
+static const enum consoleLibColor modeColor[] = {
     CL_COLOR_GREEN, CL_COLOR_RED, CL_COLOR_BLUE, CL_COLOR_YELLOW
 };
 static const int modeCount = 4;
