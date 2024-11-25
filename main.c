@@ -224,28 +224,28 @@ void updateKey(int key) {
                 break;
             case SETTINGS:
                 switch(key) {
-                    case  CL_KEY_UP:
+                    case CL_KEY_UP:
                         difficulty++;
                         if(difficulty >= (unsigned)difficultyCount) {
                             difficulty = 0;
                         }
 
                         break;
-                    case  CL_KEY_DOWN:
+                    case CL_KEY_DOWN:
                         difficulty--;
                         if(difficulty == (unsigned)-1) {
                             difficulty = difficultyCount - 1;
                         }
 
                         break;
-                    case  CL_KEY_RIGHT:
+                    case CL_KEY_RIGHT:
                         mode++;
                         if(mode >= (unsigned)modeCount) {
                             mode = 0;
                         }
 
                         break;
-                    case  CL_KEY_LEFT:
+                    case CL_KEY_LEFT:
                         mode--;
                         if(mode == (unsigned)-1) {
                             mode = modeCount - 1;
@@ -464,8 +464,8 @@ void updateKey(int key) {
                                 playerSetFieldAttack(key);
 
                             if(pos[1] != '_' && key == CL_KEY_ENTER) {
-                                int x = pos[1] - '0';
-                                int y = pos[0] - 'A';
+                                const int x = pos[1] - '0';
+                                const int y = pos[0] - 'A';
 
                                 boatHitSize = 0;
 
